@@ -1,10 +1,20 @@
-//your variable declarations here
+Spaceship ship = new Spaceship ();
+Star [] sky = new Star [99];
+
 public void setup() 
 {
-  //your code here
+  size(500,500);
+  
+  for (int i = 0; i < sky.length; i++)
+    sky [i] = new Star();
 }
 public void draw() 
 {
-  //your code here
+  background (3,29,85);
+  
+  for(int i = 0; i < sky.length; i++)
+    sky [i].show();
+    
+ ship.show();
+  
 }
-
