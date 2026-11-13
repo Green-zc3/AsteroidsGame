@@ -18,8 +18,23 @@ class Spaceship extends Floater
       //xCorners [3] = -2;
       //yCorners[3] = 0;
       
-      public void hyperspace (){
-        private int myX, myY;
+  public void hyperspace (){
+    
+        private int myX, myY; 
+
+        public void setX(int x){
+          myX = x;
+        }
+        public void setY( int y){
+           myY = y;
+        }
+        public int getX()
+          {
+            return myX;
+          }
+        public int getY(){
+          return myY;
+        }
         public void jump (){
           myX = (int)(Math.random()*500);
           myY = (int)(Math.random()*500);
