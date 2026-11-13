@@ -1,5 +1,5 @@
 Spaceship ship = new Spaceship ();
-Star [] sky = new Star [99];
+Star [] sky = new Star [999];
 
 public void setup() 
 {
@@ -15,6 +15,34 @@ public void draw()
   for(int i = 0; i < sky.length; i++)
     sky [i].show();
     
- ship.show();
+   ship.show();
   
 }
+
+public void keyPressed ()
+  {
+    if(key == 'h')
+    {
+      ship.setXspeed(0);
+      
+    }
+    if(key == )
+    {
+      
+    }
+    
+    if(key == +
+    {
+      
+    }
+    
+    if (key == )
+    {
+      
+    }
+    
+    if(key ==)
+    {
+      
+    }
+  }//end key presss
