@@ -1,5 +1,6 @@
 Spaceship ship = new Spaceship ();
 Star [] sky = new Star [999];
+float angle = 0;
 
 public void setup() 
 {
@@ -10,7 +11,7 @@ public void setup()
 }
 public void draw() 
 {
-  background (3,29,85);
+  background (1,3,59);
   
   for(int i = 0; i < sky.length; i++)
     sky [i].show();
@@ -22,28 +23,24 @@ public void draw()
 
 public void keyPressed ()
   {
-    if(key == 'h')
+
+    if(key == '1')//right
     {
-      ship.setXspeed(0);
-      
+       ship.turn(9);
     }
-    if(key == )
+    if(key == '2')//left
     {
-      
-    }
-    
-    if(key == +
-    {
-      
+      ship.turn (-9);
     }
     
-    if (key == )
+    if(key == '3')
     {
-      
+      ship.accelerate (0.8);
     }
     
-    if(key ==)
+    if (key == 'h')
     {
-      
+      ship.hyperspace();
     }
+    
   }//end key presss
