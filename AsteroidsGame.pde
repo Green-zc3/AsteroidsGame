@@ -16,6 +16,7 @@ public void draw()
     sky [i].show();
     
    ship.show();
+    ship.move();
   
 }
 
