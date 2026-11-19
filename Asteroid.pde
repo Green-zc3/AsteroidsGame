@@ -12,7 +12,7 @@ class Asteroid extends Floater {
   
   public double rotSpeed()
   {
-    rotSpeed = Math.random()
+    rotSpeed = Math.random()*0.2-0.3;
   }
   public void move(){
     turn(rotSpeed);
