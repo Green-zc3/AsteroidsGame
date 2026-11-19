@@ -1,8 +1,8 @@
 class Spaceship extends Floater  
 {   
     public Spaceship (){
-      myCenterX = Math.random()*width;
-      myCenterY = Math.random()*height;
+      myCenterX = 250;
+      myCenterY = 250;
       corners = 4;
       xCorners = new int []{-8,16,-8,-2};
       yCorners = new int []{-8,0,8,0};
