@@ -9,7 +9,7 @@ class Spaceship extends Floater
       corners = 4;
       xCorners = new int []{-8,16,-8,-2};
       yCorners = new int []{-8,0,8,0};
-      myColor = color(255,144,250);
+      myColor = color(131,0,92);
       
     }//end spaceship
     public void hyperspace (){
@@ -21,4 +21,7 @@ class Spaceship extends Floater
        
     }//end hyperspace
       
+  public float getX () {return (float) myCenterX;}
+  public float getY () {return (float) myCenterY;} 
+  
 }//end extend
