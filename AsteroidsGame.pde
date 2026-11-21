@@ -1,26 +1,41 @@
-Spaceship ship = new Spaceship ();
-Star [] sky = new Star [999];
-Asteroid a = new Asteroid();
+Spaceship ship;
+Star [] sky = new Star [600];
+ArrayList <Asteroid> b;
 float angle = 0;
 
 public void setup() 
 {
   size(500,500);
   
+  ship = new Spaceship();
+  
   for (int i = 0; i < sky.length; i++)
     sky [i] = new Star();
+    
+  b = new ArrayList <Asteroid>();
+  for(int i = 0; i< 30; i++)
+    b.add(new Asteroid());
 }
 public void draw() 
 {
+  
   background (1,18,9);
   
   for(int i = 0; i < sky.length; i++)
     sky [i].show();
     
-    ship.show();
+    
+   for (int i = 0; i< b.size(); i++) {
+     b.get(i).move();
+     b.get(i).show();
+     float d = dist(ship.getX(), ship.getY(), b.get(i).getX(), b.get(i).getY());
+       if(d < 10)
+         b.remove(i);
+   }
+   
     ship.move();
-    a.show();
-    a.move();
+    ship.show();
+    
   
 }
 
