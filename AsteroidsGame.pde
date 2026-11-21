@@ -19,7 +19,7 @@ public void setup()
 public void draw() 
 {
   
-  background (1,18,9);
+  background (15,0,11);
   
   for(int i = 0; i < sky.length; i++)
     sky [i].show();
