@@ -12,11 +12,15 @@ class Asteroid extends Floater {
   
   public double rotSpeed()
   {
-    rotSpeed = Math.random()*0.2-0.3;
+    double speedX, speedY,angle;
+    angle = Math.random()*(2.0*Math.PI);
+    speedX = Math.cos(angle)*3.0;
+    speedY = Math.sin(angle)*3.0;
   }
   public void move(){
     turn(rotSpeed);
     super.move();
   }
+  
   
 }// end class asteroid
