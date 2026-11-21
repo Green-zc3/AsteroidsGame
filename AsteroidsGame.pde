@@ -1,6 +1,6 @@
 Spaceship ship = new Spaceship ();
 Star [] sky = new Star [999];
-ArrayList <Asteroid> a = new ArrayList <Asteroid>();
+Asteroid a = new Asteroid();
 float angle = 0;
 
 public void setup() 
@@ -19,7 +19,8 @@ public void draw()
     
     ship.show();
     ship.move();
-
+    a.show();
+    a.move();
   
 }
 
