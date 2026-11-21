@@ -9,9 +9,9 @@ class Asteroid extends Floater {
     myPointDirection = (int)(Math.random()*360);
     
     double angle = Math.random()*(2.0 * Math.PI);
-    myXspeed = Math.cos(angle)*3.0;
-    myYspeed = Math.sin(angle)*3.0;
-    rotSpeed = (Math.random()*6.0)-3.0;
+    myXspeed = Math.cos(angle)*1.0;
+    myYspeed = Math.sin(angle)*1.0;
+    rotSpeed = (Math.random()*8.0)-3.0;
   }//end asteroid
   
   
