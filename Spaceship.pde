@@ -1,6 +1,9 @@
 class Spaceship extends Floater  
 {   
     public Spaceship (){
+      myXspeed = 0;
+      myYspeed = 0;
+      myPointDirection = (int)(Math.random()*360);
       myCenterX = 250;
       myCenterY = 250;
       corners = 4;
